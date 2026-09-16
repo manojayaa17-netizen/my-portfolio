@@ -1,0 +1,534 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+/*   NAVBAR */
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 8%;
+  background: #111722;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Manoj Logo */
+
+.nav-logo {
+  margin-right: auto;
+}
+
+.nav-logo h2 {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+/* All Navigation Links */
+
+.nav-home a,
+.nav-about a,
+.nav-skills a,
+.nav-projects a,
+.nav-contact a,
+.nav-myself a {
+  color: white;
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: transform 0.3s ease,
+              color 0.3s ease;
+}
+
+
+/* Navigation Hover */
+
+.nav-home a:hover,
+.nav-about a:hover,
+.nav-skills a:hover,
+.nav-projects a:hover,
+.nav-contact a:hover,
+.nav-myself a:hover {
+  transform: scale(1.1);
+  color: #4d8dff;
+}
+
+
+/* HOME */
+.home {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  background: #f4f8ff;
+  gap: 50px;
+}
+
+/* Home Details - LEFT */
+
+.home > div:first-child {
+  flex: 1;
+}
+
+.home > div:first-child p:first-child {
+  font-size: 30px;
+  color: #111722;
+  margin-bottom: 10px;
+}
+
+
+/* Manoj Name */
+
+
+.home h1 {
+  font-size: 80px;
+  line-height: 1.1;
+  color: #111722;
+  margin-bottom: 10px;
+}
+
+
+/* Frontend Developer */
+
+.home h2 {
+  font-size: 40px;
+  color: #4169e1;
+  margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.home p {
+  max-width: 600px;
+  font-size: 22px;
+  color: #4d5d7a;
+  margin-bottom: 25px;
+}
+/* =========================
+   PHOTO AREA - RIGHT
+========================= */
+
+.home-photo {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+
+/* Diamond Background */
+
+.diamond {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+  z-index: 1;
+  top: -40px;    
+}
+/* Manoj Photo */
+
+.my-photo {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  top: 10px;    
+  border-radius: 10%;
+}
+/* =========================
+   HOME BUTTONS
+========================= */
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+
+/* Buttons */
+
+/* =========================
+   RESUME & PROJECT BUTTONS
+========================= */
+
+.maran,
+.maran1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 280px;
+  padding: 18px 25px;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =========================
+   RESUME BUTTON
+========================= */
+.maran {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;       /* smaller */
+  padding: 15px 10px; /* smaller */
+
+  border-radius: 40px;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  position: relative;
+  left: 100px;         /* moves right */
+
+
+}
+.maran {
+  background: #111722;
+  color: white;
+
+  border: 2px solid #111722;
+}
+
+
+/* Resume Hover */
+
+.maran:hover {
+  background: #4169e1;
+  border-color: #000000;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   PROJECT BUTTON
+========================= */
+.maran1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;       
+  padding: 15px 10px; 
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  left: 100px;         /* moves right */
+
+}
+.maran1 {
+  background: white;
+  color: #161617;
+  border: 2px solid #000000;
+}
+
+
+/* Project Hover */
+
+.maran1:hover {
+  background: #4169e1;
+  color: white;
+
+  transform: scale(1.05);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+
+/* Section Heading */
+
+.section h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  display: inline-block;
+  color: #111722;
+  transition: transform 0.3s ease;
+}
+
+
+.section h2:hover {
+  transform: scale(1.1);
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+#skills {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+#projects {
+  margin-top: 50px;
+  padding-top: 10px;
+}
+#about{
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+.skills {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+padding: 11px;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+.skill {
+  padding: 20px 35px;
+
+  background: #dceaff;
+
+  color: #111722;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease,
+              background 0.3s ease;
+}
+
+
+.skill:hover {
+  transform: scale(1.1);
+
+  background: #4169e1;
+
+  color: white;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+padding: 21px;
+  flex-wrap: wrap;
+}
+
+
+.project-card {
+  width: 280px;
+
+  padding: 25px;
+
+  border: 1px solid #d9e1ef;
+
+  border-radius: 15px;
+
+  background: white;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease;
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.project-card h3 {
+  margin-bottom: 15px;
+
+  color: #111722;
+}
+
+
+.project-card p {
+  margin-bottom: 20px;
+
+  color: #4d5d7a;
+}
+
+
+.project-card button {
+  padding: 10px 20px;
+
+  border: none;
+
+  background: #111722;
+
+  color: white;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+
+.project-card button:hover {
+  background: #4169e1;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  display: inline-block;
+
+  background: #1e1d1d;
+  color: #ddd;
+
+  padding: 12px 20px;
+  margin-bottom: 10px;
+}
+
+.contact h4 {
+  display: inline-block;
+
+  background-color: rgb(255, 204, 212);
+  color: rgb(10, 0, 0);
+
+  padding: 5px 8px;
+  border-radius: 30px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 20px;
+
+  text-align: center;
+
+  background: #0b0f16;
+
+  color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  .nav-logo {
+    margin-right: 0;
+  }
+
+  .home {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 60px 5%;
+  }
+
+
+  .home h1 {
+    font-size: 55px;
+  }
+
+
+  .home h2 {
+    font-size: 30px;
+  }
+
+  .home p {
+    font-size: 18px;
+  }
+
+  .home-photo {
+    width: 100%;
+
+    height: 400px;
+  }
+
+  .my-photo {
+    width: 300px;
+
+    height: 300px;
+  }
+
+  .home-buttons {
+    align-items: center;
+  }
+
+  .maran {
+    width: 250px;
+  }
+}
