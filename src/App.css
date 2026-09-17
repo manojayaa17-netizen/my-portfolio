@@ -158,6 +158,16 @@ body {
   top: 10px;    
   border-radius: 10%;
 }
+.my-photo {
+  cursor: pointer;
+  transition: transform 0.9s ease;
+}
+
+.my-photo:hover {
+  transform: scale(0.9);
+}
+
+
 /* =========================
    HOME BUTTONS
 ========================= */
