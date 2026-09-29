@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import myPhoto from './assets/manoj.jpeg'
+import myPhoto from './assets/Manoj5.png'
 
 import './App.css'
 
